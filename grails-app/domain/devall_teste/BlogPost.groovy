@@ -2,8 +2,8 @@ package devall_teste
 
 class BlogPost {
 
-    // static belongsTo = [site:Site]
-    static hasMany = [blogPostFavorito:BlogPostFavorito]
+    // static belongsTo = [clique:Clique] //site:Site
+    static hasMany = [blogPostFavorito:BlogPostFavorito, cliques:Clique, comentarioBlogPost:ComentarioBlogPost]
 
     long version
     long favoritos

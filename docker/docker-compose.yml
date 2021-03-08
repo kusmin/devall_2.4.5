@@ -1,0 +1,8 @@
+version: "3"
+
+services:
+  devall_teste_database:
+    build: ./mysql
+    container_name: devall_teste_database
+    ports:
+      - 3306:3306

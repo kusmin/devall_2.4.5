@@ -13,7 +13,7 @@ class Autor {
     BigInteger version
     Date dataCadastro
 
-    static hasMany = [blogPostFavorito:BlogPostFavorito, comentarioBlogPost:ComentarioBlogPost]
+    static hasMany = [blogPostFavorito:BlogPostFavorito, comentarioBlogPost:ComentarioBlogPost, votoBlogPost: VotoBlogPost]
 
     static mapping = {
         table 'autor'

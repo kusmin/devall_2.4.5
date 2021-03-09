@@ -7,6 +7,10 @@ class Clique {
 
     static belongsTo = [post:BlogPost]
 
+    static mapping = {
+        table 'clique'
+    }
+
     static constraints = {
         ip maxSize:64
     }

@@ -2,14 +2,9 @@ package devall_teste
 
 class BlogPost {
 
-    // static belongsTo = [clique:Clique] //site:Site
-
-    long favoritos
-    long comentarios
-    int  cliques
-    int votosNegativos
-    int votosPositivos
-    int tentativas
+    // int votosNegativos
+    // int votosPositivos
+    // int tentativas
     Date dataPublicacao
     Date dataInclusao
     Date dataExposicao
@@ -21,19 +16,17 @@ class BlogPost {
 
     static mapping = {
         table 'blog_post'
-        votosNegativos column: 'votos_negativos'
-        votosPositivos column: 'votos_positivos'
+        // votosNegativos column: 'votos_negativos'
+        // votosPositivos column: 'votos_positivos'
         dataPublicacao column: 'data_publicacao'
         dataInclusao column: 'data_inclusao'
         dataExposicao column: 'data_exposicao'
     }
 
     static constraints = {
-        cliques nullable:false
-        comentarios nullable:true
-        votosNegativos nullable:false
-        votosPositivos nullable:false
-        tentativas nullable:true
+        // votosNegativos nullable:false
+        // votosPositivos nullable:false
+        // tentativas nullable:true
         dataPublicacao nullable:false
         dataExposicao nullable:false
         dataInclusao nullable:false

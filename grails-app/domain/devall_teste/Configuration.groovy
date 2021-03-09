@@ -2,7 +2,6 @@ package devall_teste
 
 class Configuration {
 
-    int version = 0
     String valor
     String chave
 

@@ -1,7 +1,7 @@
 dataSource {
     pooled = true
     jmxExport = true
-    driverClassName = 'com.mysql.jdbc.Driver'
+    driverClassName = 'com.mysql.cj.jdbc.Driver'
     username = 'devall'
     password = 'devall'
 }
@@ -10,7 +10,7 @@ hibernate {
     cache.use_query_cache = false
     //    cache.region.factory_class = 'org.hibernate.cache.SingletonEhCacheRegionFactory' // Hibernate 3
     cache.region.factory_class = 'org.hibernate.cache.ehcache.EhCacheRegionFactory' // Hibernate 4
-    dialect = 'org.hibernate.dialect.MySQL8InnoDBDialect'
+    //dialect = 'org.hibernate.dialect.MySQL8Dialect'
     singleSession = true // configure OSIV singleSession mode
     flush.mode = 'manual' // OSIV session flush mode outside of transactional context
 }
@@ -20,7 +20,7 @@ environments {
     development {
         dataSource {
             dbCreate = 'update' // one of 'create', 'create-drop', 'update', 'validate', ''
-            url = 'jdbc:mysql://localhost:3306/devall'
+            url = 'jdbc:mysql://0.0.0.0:3306/devall'
         }
         test {
             dataSource {

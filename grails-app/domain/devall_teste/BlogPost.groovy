@@ -3,9 +3,7 @@ package devall_teste
 class BlogPost {
 
     // static belongsTo = [clique:Clique] //site:Site
-    static hasMany = [blogPostFavorito:BlogPostFavorito, cliques:Clique, comentarioBlogPost:ComentarioBlogPost]
 
-    long version
     long favoritos
     long comentarios
     int  cliques
@@ -31,7 +29,6 @@ class BlogPost {
     }
 
     static constraints = {
-        version nullable:false
         cliques nullable:false
         comentarios nullable:true
         votosNegativos nullable:false
